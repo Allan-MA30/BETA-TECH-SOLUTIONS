@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Member List</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+            padding: 50px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e1e4e8;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+            border-color: #42b883; 
+        }
+
+        .profile-avatar {
+            width: 90px;
+            height: 90px;
+            background-color: #42b883;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+
+        .member-name {
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+
+        .member-role {
+            display: block;
+            font-weight: 600;
+            color: #42b883;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .member-bio {
+            font-size: 0.95rem;
+            color: #606770;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="section-header">
+            <h1>Meet Our Team</h1>
+        </header>
+
+        <div class="team-grid">
+            <div class="card">
+                <div class="profile-avatar">L</div>
+                <h2 class="member-name">Lorenzo</h2>
+                <span class="member-role">Developer</span>
+                <p class="member-bio">Developing the technical strategy and overseeing the project's architecture and development.</p>
+            </div>
+
+            <div class="card">
+                <div class="profile-avatar">A</div>
+                <h2 class="member-name">Ange</h2>
+                <span class="member-role">UI/UX Designer</span>
+                <p class="member-bio">Creating intuitive and visually stunning designs to enhance the user experience.</p>
+            </div>
+
+            <div class="card">
+                <div class="profile-avatar">A</div>
+                <h2 class="member-name">Allan</h2>
+                <span class="member-role">Backend Engineer</span>
+                <p class="member-bio">Managing server-side logic, databases, and ensuring high performance and security.</p>
+            </div>
+
+            <div class="card">
+                <div class="profile-avatar">A</div>
+                <h2 class="member-name">Alex</h2>
+                <span class="member-role">Content Strategist</span>
+                <p class="member-bio">Developing engaging content plans and managing digital communication assets.</p>
+            </div>
+
+            <div class="card">
+                <div class="profile-avatar">H</div>
+                <h2 class="member-name">Hugues</h2>
+                <span class="member-role">Project Manager</span>
+                <p class="member-bio">Ensuring the project stays on schedule and coordinating communication between all members.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
