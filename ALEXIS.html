@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Registration</title>
+
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #111;
+            padding: 30px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0 0 10px #444;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 14px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #222;
+            color: #fff;
+        }
+
+        input[type="radio"] {
+            width: auto;
+        }
+
+        .gender {
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            background-color: #fff;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ccc;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <h2>Employee Registration</h2>
+
+        <form>
+            <label>Full Name:</label>
+            <input type="text" name="fullname" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Phone Number:</label>
+            <input type="tel" name="phone" required>
+
+            <label>Gender:</label>
+            <div class="gender">
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </div>
+
+            <label>Department:</label>
+            <select name="department">
+                <option>IT</option>
+                <option>HR</option>
+                <option>Finance</option>
+                <option>Marketing</option>
+            </select>
+
+            <label>Date of Birth:</label>
+            <input type="date" name="dob">
+
+            <label>Address:</label>
+            <textarea name="address"></textarea>
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Booking Form</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="form-card">
+      <div class="form-header">
+        <p class="eyebrow">Beta Tech Solutions Ltd</p>
+        <h1>Event Booking Form</h1>
+        <p class="intro">
+          Use this form to reserve a place for an event and provide the details needed for confirmation.
+        </p>
+      </div>
+
+      <form class="grid-form" action="#" method="post">
+        <div class="field">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full_name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="field">
+          <label for="booking-email">Email Address</label>
+          <input type="email" id="booking-email" name="email" placeholder="name@example.com" required>
+        </div>
+
+        <div class="field">
+          <label for="booking-phone">Phone Number</label>
+          <input type="tel" id="booking-phone" name="phone" placeholder="+250 7XX XXX XXX" required>
+        </div>
+
+        <div class="field">
+          <label for="event-name">Event Name</label>
+          <input type="text" id="event-name" name="event_name" placeholder="Enter event name" required>
+        </div>
+
+        <div class="field">
+          <label for="event-type">Event Type</label>
+          <select id="event-type" name="event_type" required>
+            <option value="">Select event type</option>
+            <option value="conference">Conference</option>
+            <option value="workshop">Workshop</option>
+            <option value="seminar">Seminar</option>
+            <option value="training">Training</option>
+            <option value="meeting">Meeting</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="event-date">Event Date</label>
+          <input type="date" id="event-date" name="event_date" required>
+        </div>
+
+        <div class="field">
+          <label for="start-time">Start Time</label>
+          <input type="time" id="start-time" name="start_time" required>
+        </div>
+
+        <div class="field">
+          <label for="venue">Venue</label>
+          <input type="text" id="venue" name="venue" placeholder="Enter venue name" required>
+        </div>
+
+        <div class="field">
+          <label for="tickets">Number of Attendees</label>
+          <input type="number" id="tickets" name="attendees" min="1" max="500" placeholder="1" required>
+        </div>
+
+        <div class="field">
+          <label for="package">Booking Package</label>
+          <select id="package" name="package" required>
+            <option value="">Select package</option>
+            <option value="standard">Standard</option>
+            <option value="business">Business</option>
+            <option value="vip">VIP</option>
+          </select>
+        </div>
+
+        <fieldset class="fieldset full-width">
+          <legend>Special Services</legend>
+          <div class="choice-row">
+            <label><input type="checkbox" name="services" value="catering"> Catering</label>
+            <label><input type="checkbox" name="services" value="photography"> Photography</label>
+            <label><input type="checkbox" name="services" value="livestream"> Live Stream</label>
+            <label><input type="checkbox" name="services" value="transport"> Transport</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset full-width">
+          <legend>Payment Method</legend>
+          <div class="choice-row">
+            <label><input type="radio" name="payment_method" value="mobile-money" required> Mobile Money</label>
+            <label><input type="radio" name="payment_method" value="bank-transfer"> Bank Transfer</label>
+            <label><input type="radio" name="payment_method" value="cash"> Cash</label>
+          </div>
+        </fieldset>
+
+        <div class="field full-width">
+          <label for="notes">Additional Notes</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Share any extra booking requirements"></textarea>
+        </div>
+
+        <div class="actions full-width">
+          <button type="submit" class="button">Book Event</button>
+          <button type="reset" class="button button-secondary">Clear Form</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
